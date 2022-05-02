@@ -15,20 +15,48 @@
         </h3>
     </header>
     <main>
+        
         <h4>how many navigation items do you want?</h4>
         <input type="number" id="num-of-navitems">
-        <label for="color">color:</label>
-        <div id="picker"></div>
+
+        
+        <label for="color"> nav background color:</label>
+        <input type="color"id='colorpicker'name='color'>
+
+
+        <label for="textcolor"> text color:</label>
+        <input type="color"id='colorpickertext'name='textcolor'>
+        <label for="textcolor"> enter item names seperated with a space!</label>
+        <input id="itemnames" type="text">
+
+        <form>
+            <input type="radio" name="choice" value="background" id="radio_button" onclick="createbackgroundIcon()"> 
+            <label for="choice-yes">background</label>
+            <input type="radio" name="choice" value="image" id="radio_button" onclick="createbackgroundimgicon()">
+            <label for="choice-no">image</label>
+            <section id="background">
+              
+
+            </section>
+           
+        </form>
 
        <button type="button" id="save">save</button>
+       <button type="button" id="reset">reset</button>
+
+      
        <h3><u>demo</u></h3>
-        <section id="demo">
+       <section id="demo">
+
+
+        
 
 
 
 
 
         </section>
+        
 
     </main>
     
